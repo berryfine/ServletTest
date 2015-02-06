@@ -4,9 +4,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-    <form method = "post" action="xmlServletPath">
+    <form method = "get" action="xmlServletPath">
         User Name: <input name ="userName"/>
-        Full Name: <input name = "fullName">
+        Full Name: <input name = "fullName"/>
+        <br>
+        Professor:
+        <input Type = "radio" name="prof" value="Developer">Developer</input>
+        <input Type = "radio" name="prof" value="Farmer">Farmer</input>
+        <br>
+        Location:
+        <Select name="location" multiple size=3>
+            <option value="Houston">Houston</option>
+            <option value="USA">USA</option>
+            <option value = "China">China</option>
+            <option value = "Peking">Peking</option>
+        </Select>
         <input Type = "submit"/>
     </form>
 </body>
